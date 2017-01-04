@@ -1,0 +1,182 @@
+/* BBLEARN 2012
+================================================*/
+
+@import url("ultra_fonts.css");
+@import url("stlccfonts.css");
+
+/*Core styles*/
+@import url("core.css");
+
+/*Theme-specific styles*/
+@import url("theme_specific.css");
+
+/*Tools*/
+@import url("grading_common.css");
+@import url("interactive.css");
+@import url("login.css");
+@import url("outcomes.css");
+@import url("wizard.css");
+
+/*Service Packs*/
+@import url("sp6.css");
+@import url("sp8.css");
+@import url("sp10.css");
+@import url("sp12.css");
+
+/*Temporary external stylesheet*/
+@import url("external.css");
+
+/*Responsive*/
+@import url("480.css");
+
+/* /BBLEARN 2012
+================================================*/
+/* logoff button - make the text 'logout' visible */
+.global-nav-bar .logout-link {
+    width: 132px;
+    text-indent: 80px;
+}
+
+.topTabs {
+    background-color: #003A70 !important;
+}
+#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+  color: #fff;
+}
+
+.appTabs a {
+    color: #24b9ec !important;
+    border: 1px solid #fff !important;
+    border-width: 0 1px 0 !important;
+}
+
+/* pane tabs aka child tabs */
+.paneTabs {
+    background: #adc7d0;
+}
+
+.paneTabs a {
+    color: #00315c;
+}
+
+.paneTabs a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.paneTabs .active a, .paneTabs .active a:hover, .paneTabs .active a:focus, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3 {
+    color: #fff;
+}
+
+.global-nav-bar-wrap {
+    background-color: #002453;
+}
+
+/* force quick links launcher back into content space */
+#quick_links_wrap {
+	right: initial;
+}
+#quick_links_wrap:hover, #quick_links_wrap.quick_link_wrap_focus {
+    left: initial;
+}
+
+/* container for action butttons at top of a section */
+.actionBar ul li a {
+    background: none !important;
+    color: #24b9ec !important;
+}
+
+/* course menu stuff */
+#courseMenuPalette div.navPaletteContent {
+    background-color: #003a70;
+}
+
+/* course menu wrapper */
+.menuWrap {
+    background-color: #003a70;
+}
+
+#courseMenuPalette ul {
+    background-color: #003a70;
+}
+
+.listCm .subhead h3{
+	padding: 0px;
+	border-top: #fff solid;
+}
+
+.discover .navPaletteContent, .singleControl .navPaletteContent {
+    background-color: #003a70;
+}
+
+#courseMenuPalette a:hover, #controlPanelPalette_contents a:hover, #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
+    color: #57c9e8 !important;
+}
+/* puller is that indicator for minimizing or moving the course menu */
+#puller a:hover, #puller a:focus {
+    background-color: #24b9ec;
+}
+
+/* content options for vbte */
+p.stlccReadable {
+    max-width: 95em;
+}
+
+p.stlccTip {
+    border: 1.5pt solid #F38A00; 
+    padding: 1em; 
+    margin: 4%; 
+    margin-top: 30px; 
+    text-align: center;
+    max-width: 85%;
+}
+
+/* */
+.appTabs td.active {
+	border-bottom-color: #57C9E8;
+}
+
+.good, .adding {
+    background: #49803C;
+}
+
+/* submit and ok buttons */
+#primaryButton, input.submit[type="submit"], .rumble .mainButton > a, .rumble_top .mainButton > a, .button-1, .button-1-img {
+    background-color: #113b71;
+}
+/* reorder background */
+.item .reorder {
+    background: #00b3e3;
+}
+
+/* login page stuff */
+/* Logon Page */
+div.loginBody {
+    background: none;
+    margin: 0 auto;
+    padding: 125px 0 0;
+    width: initial;
+}
+.login-page #copyright {
+    bottom: 0px;
+    left: 0px;
+    margin-left: 0px;
+    margin-top: 24px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+	background: none;	
+}
+
+#loginBox li input[type="submit"] {
+    background: #113b71;
+    cursor: pointer;
+    color: #ffffff;
+}
+	
+#loginBox input[type="text"], #loginBox input[type="password"] {
+    background: #ffffff;
+    padding: 6px;
+    border: 1px solid #f1f5f6;
+    color: #113b71;
+}

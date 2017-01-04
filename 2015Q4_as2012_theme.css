@@ -1,0 +1,289 @@
+/* BBLEARN 2012
+================================================*/
+
+/*Core styles*/
+@import url("core.css");
+@import url("stlcc_font.css");
+
+/*Theme-specific styles*/
+@import url("theme_specific.css");
+
+/*Tools*/
+@import url("grading_common.css");
+@import url("interactive.css");
+@import url("login.css");
+@import url("outcomes.css");
+@import url("wizard.css");
+
+/*Service Packs*/
+@import url("sp6.css");
+@import url("sp8.css");
+@import url("sp10.css");
+@import url("sp12.css");
+
+/*Temporary external stylesheet*/
+@import url("external.css");
+
+/*Responsive*/
+/*Awaiting new version of yui-compressor that can handle @media queries.*/
+
+/* /BBLEARN 2012
+================================================*/
+
+
+html {
+    font: 400 0.8em "Source Sans Pro", sans-serif;
+    font-size: .8em !important;
+    overflow-x: auto;
+    background-color: #F1F5F6;
+}
+
+#contentFrame, #schemePreview, .schemePreviewBody, body {
+    background: #F1F5F6;
+}
+
+/*
+update app_nav with these:
+.topTabs {
+    background-color: #113b71;
+    box-shadow: none;
+    color: #24b9ec;
+}
+
+appTabs a {
+    color: #24B9EC;
+    border: 1px solid #FFFFFF;
+    border-width: 0 1px 0 1px;
+    border-radius: initial;
+}
+
+#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: none;
+}
+*/
+/* custom tab border for ends */
+#Help > a {
+	border-right: none;
+}
+
+#Welcome > a {
+	border-left: none;
+}
+
+/* set no outside border for common end tabs */
+/*#\3c b\3e Home\3c \2f b\3e > a*/
+#\<b\>Home\<\/b\> > a:nth-child(1) {
+	border-left: none;
+}
+
+#SystemAdmin\2e label > a {
+	border-right: none;
+}
+
+/* Child Tabs */
+.paneTabs {
+    background: #adc7d0;
+}
+
+.paneTabs .active a, .paneTabs .active a:hover, .paneTabs .active a:focus, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3 {
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.panetabs li a:hover {
+	color: #FFFFFF;
+}
+
+.panetabs a:hover {
+	color: #FFFFFF;
+}
+
+a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
+    color: #00315c;
+}
+
+.breadcrumbs {
+    background: #adc7d0;
+    color: #00315c;
+}
+
+/* Global Nav Menu*/
+.flyout-menu {
+    background-color: #113b71;
+
+}
+
+.flyout-menu .mybb-tools {
+    background-color: #113b71;
+}
+
+/* My Bb */
+.side-nav {
+    background: #113b71;
+
+}
+
+h3.section-title {
+    color: #000000;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+
+/* Beadcrumb path */
+.path a, .simplePath a {
+    color: #00315c;
+}
+
+/* modules */
+.portlet {
+    background-color: #ffffff;
+}
+
+.portal .contentBox {
+    background: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* general look */
+#contentArea, #schemePreviewBody, .contentBox {
+    border: none;
+}
+
+input[type="submit"].submit:hover, input[type="submit"].submit:focus, .rumble .mainButton>a:hover, .rumble .mainButton>a:focus, .rumble_top .mainButton>a:hover, .rumble_top .mainButton>a:focus, .button-1:hover, .button-1:focus, .button-1-img:hover, .button-1-img:focus {
+    background: #113b71;
+    background-image: none;
+}
+
+#primaryButton, input.submit[type="submit"], .rumble .mainButton > a, .rumble_top .mainButton > a, .button-1, .button-1-img {
+    background: #113b71;
+    background-image: none;
+}
+
+/* action buttons / bar */
+#actionBarBrand, .actionBar, .actionBarMicro {
+    background: transparent;
+}
+
+.actionBar {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: none;
+    -moz-border-radius: none;
+    -webkit-border-radius: none;
+    border-top: none;
+}
+
+.mainButton > a, .secondaryButton > a, .mainButton h2 > a, .secondaryButton h2 > a {
+    color: #ffffff;
+    text-shadow: none;
+    background: #0082ca;
+}
+
+/* Logon Page */
+div.loginBody {
+    background: none;
+    margin: 0 auto;
+    padding: 125px 0 0;
+    width: initial;
+}
+.login-page #copyright {
+    bottom: 0px;
+    left: 0px;
+    margin-left: 0px;
+    margin-top: 24px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+	background: none;	
+}
+
+#loginBox li input[type="submit"] {
+    background: #113b71;
+    cursor: pointer;
+}
+	
+#loginBox input[type="text"], #loginBox input[type="password"] {
+    background: #ffffff;
+    padding: 6px;
+    border: 1px solid #f1f5f6;
+    color: #113b71;
+}
+
+/* logoff button - make the text 'logout' visible */
+.global-nav-bar .logout-link {
+    width: 132px;
+    text-indent: 80px;
+}
+
+/* course menu */
+.navPaletteTitle {
+    position: relative;
+    background: #adc7d0;
+}
+
+.navPaletteContent h3 a {
+    text-shadow: none;
+}
+
+.listCm .courseMenu .divider, .buttonCm .courseMenu .divider {
+    padding: 12px 12px 0px 12px;
+}
+
+.noteditmode .listCm .courseMenu .divider, .noteditmode .listCm .buttonCm .divider {
+    padding: 12px 12px 0px 12px;
+}
+
+/* course menu subheaders */
+.ineditmode div.listCm ul.courseMenu li.subhead:hover {
+	color: #113b71 !important;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.subhead {
+    font-variant: small-caps;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+/* course menu hover links */
+.listCm .courseMenu > li:hover a span,
+.listCm .courseMenu a:hover,
+.listCm .courseMenu a:focus,
+.listCm .courseMenu a:hover span,
+.listCm .courseMenu a:focus span {
+	color: #00b3e3!important 
+}
+
+/* course content constrain width for readibility*/
+ul.announcementList li div.details.tab-group-label > div div.vtbegenerated {
+    max-width: 1024px;
+}
+
+#puller a {
+	background: #0082ca;
+}
+
+#puller a:hover {
+	background: #0082ca;
+}
+
+/* custom entries for manual update */
+p.stlccReadable {
+    max-width: 1024px;
+}
+
+p.stlccTip {
+    border: 1.5pt solid #F38A00; 
+    padding: 1em; 
+    margin: 4%; 
+    margin-top: 30px; 
+    text-align: center;
+    max-width: 850px;
+}

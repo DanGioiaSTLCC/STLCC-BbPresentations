@@ -1,0 +1,27 @@
+
+<script type="text/javascript">
+    Event.observe(document,"dom:loaded", function() {
+        var stlccFlashStageID = window.setInterval(stlccModStageLabel, 5000);
+    	
+    });
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+
+function stlccModStageLabel() {
+    var domStageLabel2 = getElementByXpath('//*[@id="stlccStageLabel2"]'); 
+	if (domStageLabel2.style.color == "yellow") {
+		domStageLabel2.style.color = "#fff";
+	}
+	else {
+		domStageLabel2.style.color = "yellow"
+	}
+}
+</script>
+<div style="position: absolute; top:0; left: 325px;
+	font-size: 2em;
+	color: #fff; 
+	background: transparent;
+	z-index: 2000;" 
+	id="stlccStageLabel2">DEV 2016 Q4
+</div>
