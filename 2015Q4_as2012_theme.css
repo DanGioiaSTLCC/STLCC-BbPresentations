@@ -1,33 +1,7 @@
 /* BBLEARN 2012
-================================================*/
-
-/*Core styles*/
-@import url("core.css");
-@import url("stlcc_font.css");
-
-/*Theme-specific styles*/
-@import url("theme_specific.css");
-
-/*Tools*/
-@import url("grading_common.css");
-@import url("interactive.css");
-@import url("login.css");
-@import url("outcomes.css");
-@import url("wizard.css");
-
-/*Service Packs*/
-@import url("sp6.css");
-@import url("sp8.css");
-@import url("sp10.css");
-@import url("sp12.css");
-
-/*Temporary external stylesheet*/
-@import url("external.css");
-
-/*Responsive*/
-/*Awaiting new version of yui-compressor that can handle @media queries.*/
-
-/* /BBLEARN 2012
+================================================
+...
+/BBLEARN 2012
 ================================================*/
 
 
