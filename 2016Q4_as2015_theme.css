@@ -1,35 +1,7 @@
 /* BBLEARN 2012
-================================================*/
-
-@import url("ultra_fonts.css");
-@import url("stlccfonts.css");
-
-/*Core styles*/
-@import url("core.css");
-
-/*Theme-specific styles*/
-@import url("theme_specific.css");
-
-/*Tools*/
-@import url("grading_common.css");
-@import url("interactive.css");
-@import url("login.css");
-@import url("outcomes.css");
-@import url("wizard.css");
-
-/*Service Packs*/
-@import url("sp6.css");
-@import url("sp8.css");
-@import url("sp10.css");
-@import url("sp12.css");
-
-/*Temporary external stylesheet*/
-@import url("external.css");
-
-/*Responsive*/
-@import url("480.css");
-
-/* /BBLEARN 2012
+================================================
+...
+/BBLEARN 2012
 ================================================*/
 /* logoff button - make the text 'logout' visible */
 .global-nav-bar .logout-link {
