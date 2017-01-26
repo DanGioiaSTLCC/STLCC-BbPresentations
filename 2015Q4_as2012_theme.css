@@ -4,10 +4,9 @@
 /BBLEARN 2012
 ================================================*/
 
-
 html {
-    font: 400 0.8em "Source Sans Pro", sans-serif;
-    font-size: .8em !important;
+    font: 400 0.9em "Source Sans Pro", sans-serif;
+    /*font-size: 1.1em !important;*/
     overflow-x: auto;
     background-color: #F1F5F6;
 }
@@ -47,7 +46,6 @@ appTabs a {
 }
 
 /* set no outside border for common end tabs */
-/*#\3c b\3e Home\3c \2f b\3e > a*/
 #\<b\>Home\<\/b\> > a:nth-child(1) {
 	border-left: none;
 }
@@ -58,24 +56,31 @@ appTabs a {
 
 /* Child Tabs */
 .paneTabs {
-    background: #adc7d0;
+    margin: -12px 0 0;
+    background: #d6e0e4;
+    color: #00315c;
 }
 
 .paneTabs .active a, .paneTabs .active a:hover, .paneTabs .active a:focus, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3 {
-    color: #FFFFFF;
+    font-weight: bold;
     text-shadow: none;
 }
 
-.panetabs li a:hover {
-	color: #FFFFFF;
+.paneTabs a:hover {
+    font-weight: bold;
 }
 
-.panetabs a:hover {
-	color: #FFFFFF;
-}
-
+/* modules */
 a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
     color: #00315c;
+}
+
+.portlet .courseRole, .portlet .dataBlockLabel, .portlet .eventDate {
+    color: #000;
+}
+
+.portlet .courseListing li > a {
+    font-weight: normal;
 }
 
 .breadcrumbs {
@@ -91,6 +96,21 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
 
 .flyout-menu .mybb-tools {
     background-color: #113b71;
+}
+
+.nav-link {
+    color: #fff;
+    background: initial;
+}
+
+.hotItems {
+    color: #fff;
+    background-color: initial !important;
+    font-size: larger;
+}
+
+.hotSpots a {
+    color: #fff !important;
 }
 
 /* My Bb */
@@ -109,6 +129,10 @@ h3.section-title {
 /* Beadcrumb path */
 .path a, .simplePath a {
     color: #00315c;
+}
+/* portal page */
+.containerPortal, .portal .container {
+    padding: 1px 0 0 0;
 }
 
 /* modules */
@@ -138,7 +162,17 @@ input[type="submit"].submit:hover, input[type="submit"].submit:focus, .rumble .m
     background-image: none;
 }
 
-/* action buttons / bar */
+/* narrow course and content for readability */
+.read {
+    max-width: 70em;
+}
+
+/* announcements - constrain width for readibility*/
+#announcementList {
+    max-width: 70em;
+}
+
+/* action buttons and bar */
 #actionBarBrand, .actionBar, .actionBarMicro {
     background: transparent;
 }
@@ -156,37 +190,40 @@ input[type="submit"].submit:hover, input[type="submit"].submit:focus, .rumble .m
 .mainButton > a, .secondaryButton > a, .mainButton h2 > a, .secondaryButton h2 > a {
     color: #ffffff;
     text-shadow: none;
-    background: #0082ca;
-}
-
-/* Logon Page */
-div.loginBody {
-    background: none;
-    margin: 0 auto;
-    padding: 125px 0 0;
-    width: initial;
-}
-.login-page #copyright {
-    bottom: 0px;
-    left: 0px;
-    margin-left: 0px;
-    margin-top: 24px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-	background: none;	
-}
-
-#loginBox li input[type="submit"] {
     background: #113b71;
-    cursor: pointer;
+    padding: 10px 18px 10px;
 }
-	
-#loginBox input[type="text"], #loginBox input[type="password"] {
-    background: #ffffff;
-    padding: 6px;
-    border: 1px solid #f1f5f6;
-    color: #113b71;
+
+.additional .right {
+    color: #000000;
+}
+
+/* data table */
+.inventory > thead tr th, .splashTable thead tr th {
+    color: #000000;
+    text-shadow: none;
+}
+
+.sortable a.sortheader {
+    text-shadow: none;
+}
+
+.sortable > thead th a {
+    color: #000000;
+}
+
+/* flyout and accordian on global nav*/
+.accordion_content li a {
+    color: #00315c;
+}
+.flyout-menu .labelMenuItem {
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: none;
+    text-decoration: underline #000;
+}
+.flyout-menu a {
+    color: #00315c;
 }
 
 /* logoff button - make the text 'logout' visible */
@@ -199,6 +236,11 @@ div.loginBody {
 .navPaletteTitle {
     position: relative;
     background: #adc7d0;
+    color: #00315c;
+}
+
+.navPaletteTitle h3 a {
+    color: #00315c !important;
 }
 
 .navPaletteContent h3 a {
@@ -224,6 +266,7 @@ div.loginBody {
     font-variant: small-caps;
     font-size: larger;
     text-decoration: underline;
+    letter-spacing: 0.15em;
 }
 
 /* course menu hover links */
@@ -232,14 +275,15 @@ div.loginBody {
 .listCm .courseMenu a:focus,
 .listCm .courseMenu a:hover span,
 .listCm .courseMenu a:focus span {
-	color: #00b3e3!important 
+	/*color: #00b3e3!important */
+	color: #00ffff !important;
 }
 
-/* course content constrain width for readibility*/
-ul.announcementList li div.details.tab-group-label > div div.vtbegenerated {
-    max-width: 1024px;
+.ineditmode div.listCm ul.courseMenu li:hover a span {
+    color: #113b71 !important;
 }
 
+    /* that collapse thing on the inside of the course menu */
 #puller a {
 	background: #0082ca;
 }
@@ -248,16 +292,79 @@ ul.announcementList li div.details.tab-group-label > div div.vtbegenerated {
 	background: #0082ca;
 }
 
-/* custom entries for manual update */
-p.stlccReadable {
-    max-width: 1024px;
+.navDivider {
+    padding: 5px 6px 4px 30px;
+    color: #00315c;
+    text-shadow: none;
+    background-color: #adc7d0;
 }
 
-p.stlccTip {
-    border: 1.5pt solid #F38A00; 
+/* course swithcers */
+.student-preview-control a {
+    background-color: #ffffff;
+}
+.read-off {
+    color: initial;
+}
+.read-on {
+    background-color: #000000;
+}
+.switcherLabel {
+    color: #000000;
+}
+
+.helpLink a.browseIcon {
+    background: #d57900;
+}
+
+a.enrolled {
+    background-color: #840000;
+}
+a.not-enrolled {
+    background-color: #113b71;
+}
+.singleControl a.enrolled::before, .singleControl a.not-enrolled::before, .discover a::before {
+	background-color: white;
+}
+
+
+.announcementList .details, #announcementList .details {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monospace;
+}
+
+.vtbegenerated {
+    font-size: medium;
+    font-family: 'Source Sans Pro';
+}
+
+/* content options for vtbe 
+    add any of these CSS classes to a paragraph or div tag 
+    for standardized formatting
+*/
+
+.readable {
+    max-width: 70em;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;
+}
+.comfortable {
+    max-width: 65em;
+    line-height: 1.5em;
+    font-size: medium;
+    font-variant: normal;
+    font-style: normal;
+}
+
+.tip {
+    border: 1.5px solid #F38A00; 
     padding: 1em; 
     margin: 4%; 
     margin-top: 30px; 
+    max-width: 85%;
     text-align: center;
-    max-width: 850px;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;	
+	font-weight: bold;
 }
