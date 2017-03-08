@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    Event.observe(document,"dom:loaded", function() {
+
+if (document.getElementById('paneTabs')){
+    if (document.getElementById('actionbar')){
+    	document.getElementById('actionbar').style.marginTop = "-45px";
+	}
+	if (document.getElementById('nav')){
+		var stlccActionBarNav = document.getElementById('nav');
+		stlccActionBarNav.style.float = "right";
+
+	}
+	if (document.getElementById('navsecondary')){
+		document.getElementById('navsecondary').style.float = "right";
+	}	
+}
+    });
+    /* filter: URL is asterisk/webapps/portal/execute/tabs/tabAction\?tab_tab_group_id* */
+</script>
