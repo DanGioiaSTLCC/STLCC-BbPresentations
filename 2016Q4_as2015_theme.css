@@ -3,11 +3,32 @@
 ...
 /BBLEARN 2012
 ================================================*/
+html {
+    font: 400 0.9em "Source Sans Pro","Open Sans", sans-serif;
+    font-size: .9em !important;
+    overflow-x: auto;
+}
+
+/* restore full width */
+#contentFrame, #schemePreview, .schemePreviewBody, body {
+    max-width: 100%;
+}
+
 /* logoff button - make the text 'logout' visible */
 .global-nav-bar .logout-link {
     width: 132px;
     text-indent: 80px;
 }
+
+/* resize and reposition branding image */
+.brandingImgWrap img {
+	color: #fff !important; /* make banner img alt text readable */
+	left: 0 !important;
+	max-height: initial !important;
+	max-width: initial !important;
+	top: 10px !important;
+}
+
 
 .topTabs {
     background-color: #003A70 !important;
@@ -17,14 +38,31 @@
 }
 
 .appTabs a {
-    color: #24b9ec !important;
+    color: #0ff !important;
     border: 1px solid #fff !important;
-    border-width: 0 1px 0 !important;
+    border-width: 1px 1px 0 1px !important;
+    border-radius: 20px 20px 0px 0px !important;
+}
+
+/* enable top tabs to overtake branding logo
+   update to standard tab width plus logo*/
+@media only screen and (max-width: 1075px) {
+    .brandingImgWrap img {
+        display: none;
+    }
+}
+/* remove some of the excess space from below the top tabs */
+.appTabs td {
+	padding-bottom: 0 !important;
+}
+
+.appTabs td.active {
+	border-bottom-color: #0ff;
 }
 
 /* pane tabs aka child tabs */
-.paneTabs {
-    background: #adc7d0;
+.paneTabs, .breadcrumbs {
+    background: #D6E0E4;
 }
 
 .paneTabs a {
@@ -33,29 +71,159 @@
 
 .paneTabs a:hover {
     text-decoration: underline;
-    color: #fff;
+    font-weight: bold;
 }
 
 .paneTabs .active a, .paneTabs .active a:hover, .paneTabs .active a:focus, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3 {
-    color: #fff;
+    color: #00315c;
+    font-weight: bold;
 }
 
 .global-nav-bar-wrap {
     background-color: #002453;
 }
 
+/* unread message count style override */
+.global-nav-bar .badge, .side-nav .menu-icon span.badge {
+    font-size: 1.3em;
+    height: 1.3em;
+    background-color: #980000;
+    border-radius: 4px;
+}
+
+/* Global Nav Menu*/
+.flyout-menu {
+    background-color: #113b71;
+
+}
+.accordion_content li a {
+    color: #00315c;
+}
+.flyout-menu .labelMenuItem {
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: none;
+    text-decoration: underline #000;
+}
+.flyout-menu a {
+    color: #00315c;
+}
+
+.flyout-menu .mybb-tools {
+    background-color: #113b71;
+}
+
+.nav-link {
+    color: #fff;
+    background: #00315c;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background: #000;
+}
+
+.hotItems {
+    color: #fff;
+    background-color: initial !important;
+    font-size: larger;
+}
+
+.hotSpots a {
+    color: #fff !important;
+}
+
+.accordion_content #menuShortcutText {
+    font-style: italic;
+    font-size: 100%;
+}
+
+/* My Bb */
+.side-nav {
+    background: #113b71;
+}
+
 /* force quick links launcher back into content space */
 #quick_links_wrap {
 	right: initial;
 }
+
 #quick_links_wrap:hover, #quick_links_wrap.quick_link_wrap_focus {
     left: initial;
 }
 
 /* container for action butttons at top of a section */
+.actionBar ul li a:hover {
+    background: #003A70 !important;
+    color: #fff !important;
+}
+
 .actionBar ul li a {
-    background: none !important;
-    color: #24b9ec !important;
+    background-color: transparent !important;
+    color: #003A70 !important;
+    text-decoration: underline;
+    border: none;/* #003A70 5px solid !important;*/
+}
+
+.helpLink a.browseIcon {
+    background: #d57900;
+}
+
+#announcementList {
+    max-width: 70em;
+}
+
+.announcementList .details, #announcementList .details {
+    font-family: monospace;
+    font-size: small;
+}
+
+.reqfield {
+    color: #555;
+}
+.genericButton, .genericButtonImg, input.genericButton[type="submit"] {
+    background-color: #d6e0e4;
+    box-shadow: initial;
+}
+.fileInputWrapper input.visibleInput {
+    border: #003A70 solid;
+}
+
+.genericButton, .genericButtonImg, input.genericButton[type="submit"], .browse, .browseIcon, .rumble h3 + ul > li > a, .rumble h3 + ul > li > a, .rumble_top h3 + ul > li > a, .rumble_top h3 + ul > li > a, .paging a, .itemHeaderControl > a, .actionMenuButton, .button-3, .button-3-img, .button-4, .button-4-img, #toolsSearchBox + .button-4, .treeContainer .tree li a.button-4-img, .rumble a, .rumble_top a, .rumble .abutton, .rumble_top .abutton {
+    border: none;
+    background-color: #d6e0e4;
+    box-shadow: initial;
+}
+
+.portletInfoFooter {
+    font-size: 90%;
+    color: #444;
+}
+
+/* content table headers, increased contrast to AAA */
+.inventory > thead tr th, .splashTable thead tr th {
+	color: #333;
+}
+
+.sortable > thead th a {
+	color: #333;
+}
+
+/* unread count, particularly used for discussion board */
+.unread-count {
+	background: #980000 !important;
+}
+
+/* narrow course and org content for readability */
+.read {
+    max-width: 70em;
+}
+.contentList .details {
+    padding-left: 60px;
+    max-width: 70em;
+    background-color: #fff;
+}
+.contentList, .buildList, .contentListPlain, .announcementList {
+	background-color: #fff;
 }
 
 /* course menu stuff */
@@ -72,9 +240,32 @@
     background-color: #003a70;
 }
 
+.subhead {
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    background-color: #adc7d0 !important;
+    color: #00315c !important
+}
 .listCm .subhead h3{
-	padding: 0px;
-	border-top: #fff solid;
+    letter-spacing: 0.05em;
+    background-color: #adc7d0 !important;
+    color: #00315c !important
+}
+
+.listCm .courseMenu .divider, .buttonCm .courseMenu .divider {
+    padding: 0px 18px;
+}
+
+/* course control panel to match title header */
+#controlPanelPalette {
+    background-color: #333;
+    font-size: medium;
+}
+#courseMenuPalette_contents {
+    font-size: medium;
+}
+.noteditmode .listCm .courseMenu .divider, .noteditmode .listCm .buttonCm .divider {
+    padding: 0px 18px;
 }
 
 .discover .navPaletteContent, .singleControl .navPaletteContent {
@@ -82,73 +273,138 @@
 }
 
 #courseMenuPalette a:hover, #controlPanelPalette_contents a:hover, #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
-    color: #57c9e8 !important;
+    color: #0ff !important;
+    background-color: #00315c !important;
 }
+
+/* weird course menu hover issue */
+#courseMenuPalette_contents > li:hover > a > span {
+    color: #0ff !important;
+}
+
 /* puller is that indicator for minimizing or moving the course menu */
 #puller a:hover, #puller a:focus {
-    background-color: #24b9ec;
+    background-color: #0ff;
 }
 
-/* content options for vbte */
-p.stlccReadable {
-    max-width: 95em;
+.switcherLabel {
+    color: #444;
 }
-
-p.stlccTip {
-    border: 1.5pt solid #F38A00; 
-    padding: 1em; 
-    margin: 4%; 
-    margin-top: 30px; 
-    text-align: center;
-    max-width: 85%;
+.read-off {
+    color: initial;
 }
-
+.read-on {
+    background-color: #444;
+}
 /* */
-.appTabs td.active {
-	border-bottom-color: #57C9E8;
-}
 
 .good, .adding {
-    background: #49803C;
+    background: #6fd162;
+    color: #000;
 }
 
 /* submit and ok buttons */
 #primaryButton, input.submit[type="submit"], .rumble .mainButton > a, .rumble_top .mainButton > a, .button-1, .button-1-img {
     background-color: #113b71;
 }
+
 /* reorder background */
 .item .reorder {
     background: #00b3e3;
 }
 
-/* login page stuff */
-/* Logon Page */
-div.loginBody {
-    background: none;
-    margin: 0 auto;
-    padding: 125px 0 0;
-    width: initial;
+/* modules */
+.portlet h3, #lightbox h3, .portlet div.portletBlock h4, .portlet div.blockContents h4, .flyout h3, .labelMenuItem {
+    color: #003A70;
 }
-.login-page #copyright {
-    bottom: 0px;
-    left: 0px;
-    margin-left: 0px;
-    margin-top: 24px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-	background: none;	
+.noItems, .additional + p .warnFont {
+    color: #555;
+}
+a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
+    color: #003A70;
+}
+.moduleControlWrapper a::after {
+    color: #555;
 }
 
-#loginBox li input[type="submit"] {
-    background: #113b71;
-    cursor: pointer;
-    color: #ffffff;
+.announcementList .details, #announcementList .details {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monospace;
 }
-	
-#loginBox input[type="text"], #loginBox input[type="password"] {
-    background: #ffffff;
-    padding: 6px;
-    border: 1px solid #f1f5f6;
-    color: #113b71;
+
+.vtbegenerated {
+    font-size: medium;
+}
+
+/* flatten module space */
+.steptitle, div[id*="step"], div[id*="Step"], #dataCollectionContainer, .container {
+    background-color: transparent;
+}
+
+/* reduce empty space and extra borders around the content*/
+.container {
+    border: none;
+	padding: 1em;
+	margin: 0;    
+}
+
+.portlet {
+    border: none;
+    background-color: #00315c;
+    color: #fff;
+}
+#moduleTitle, .portlet h2 {
+    padding: 15px 10px 13px 25px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+.collapsible {
+    background-color: #fff;
+    color: #444;
+}
+/* end flatten */
+
+
+/* content options for vtbe 
+    add any of these CSS classes to a paragraph or div tag 
+    for standardized formatting
+*/
+
+.readable {
+    max-width: 70em;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;
+}
+.comfortable {
+    max-width: 65em;
+    line-height: 1.5em;
+    font-size: medium;
+    font-variant: normal;
+    font-style: normal;
+}
+.tip {
+    border: 1.5px solid #F38A00; 
+    padding: 1em; 
+    margin: 4%; 
+    margin-top: 30px; 
+    max-width: 85%;
+    text-align: center;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;	
+	font-weight: bold;
+}
+/* end custom vtbe classes */
+/* decorate links that open in new window */
+a[target="_blank"]::after {
+    font-family: FontAwesome;
+    font-size: smaller;
+    content: " \f08e";
+}
+
+/* action bar at the bottom */
+.taskbuttondiv_wrapper {
+	border: 0.5px solid;
 }
