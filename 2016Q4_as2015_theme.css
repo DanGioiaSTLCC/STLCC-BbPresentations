@@ -16,37 +16,42 @@ html {
 
 /* logoff button - make the text 'logout' visible */
 .global-nav-bar .logout-link {
-    width: 132px;
-    text-indent: 80px;
+    width: 5em;
+    text-indent: 0;
+    background-position: 100% 0 !important;
 }
 
 /* resize and reposition branding image */
 .brandingImgWrap img {
 	color: #fff !important; /* make banner img alt text readable */
-	left: 0 !important;
+	left: -1.5em !important;
 	max-height: initial !important;
 	max-width: initial !important;
-	top: 10px !important;
+	top: -1.5em !important;
 }
-
 
 .topTabs {
-    background-color: #003A70 !important;
+    background-color: #113b71 !important;
 }
+.topTabs .tabWrapper-right {
+	height: initial;
+}
+
 #topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
   color: #fff;
 }
 
 .appTabs a {
-    color: #0ff !important;
+    color: #9ADAFF !important;
     border: 1px solid #fff !important;
-    border-width: 1px 1px 0 1px !important;
-    border-radius: 20px 20px 0px 0px !important;
+    border-width: 0 1px 0 0 !important;
+    border-radius: 0 !important;
+	padding: 0.25em 0.75em !important;
 }
 
 /* enable top tabs to overtake branding logo
    update to standard tab width plus logo*/
-@media only screen and (max-width: 1075px) {
+@media only screen and (max-width: 750px) {
     .brandingImgWrap img {
         display: none;
     }
@@ -57,7 +62,7 @@ html {
 }
 
 .appTabs td.active {
-	border-bottom-color: #0ff;
+	border-bottom-color: #9ADAFF;
 }
 
 /* pane tabs aka child tabs */
@@ -66,7 +71,7 @@ html {
 }
 
 .paneTabs a {
-    color: #00315c;
+    color: #002453;
 }
 
 .paneTabs a:hover {
@@ -75,12 +80,12 @@ html {
 }
 
 .paneTabs .active a, .paneTabs .active a:hover, .paneTabs .active a:focus, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3 {
-    color: #00315c;
+    color: #002453;
     font-weight: bold;
 }
 
 .global-nav-bar-wrap {
-    background-color: #002453;
+    background-color: #113b71;
 }
 
 /* unread message count style override */
@@ -97,7 +102,7 @@ html {
 
 }
 .accordion_content li a {
-    color: #00315c;
+    color: #002453;
 }
 .flyout-menu .labelMenuItem {
     text-transform: uppercase;
@@ -106,7 +111,7 @@ html {
     text-decoration: underline #000;
 }
 .flyout-menu a {
-    color: #00315c;
+    color: #002453;
 }
 
 .flyout-menu .mybb-tools {
@@ -115,7 +120,7 @@ html {
 
 .nav-link {
     color: #fff;
-    background: #00315c;
+    background: #113b71;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -145,6 +150,7 @@ html {
 /* force quick links launcher back into content space */
 #quick_links_wrap {
 	right: initial;
+    z-index: 9002
 }
 
 #quick_links_wrap:hover, #quick_links_wrap.quick_link_wrap_focus {
@@ -228,28 +234,28 @@ html {
 
 /* course menu stuff */
 #courseMenuPalette div.navPaletteContent {
-    background-color: #003a70;
+    background-color: #113b71;
 }
 
 /* course menu wrapper */
 .menuWrap {
-    background-color: #003a70;
+    background-color: #113b71;
 }
 
 #courseMenuPalette ul {
-    background-color: #003a70;
+    background-color: #113b71;
 }
 
 .subhead {
     letter-spacing: 0.05em;
     font-weight: bold;
     background-color: #adc7d0 !important;
-    color: #00315c !important
+    color: #002453 !important
 }
 .listCm .subhead h3{
     letter-spacing: 0.05em;
     background-color: #adc7d0 !important;
-    color: #00315c !important
+    color: #002453 !important
 }
 
 .listCm .courseMenu .divider, .buttonCm .courseMenu .divider {
@@ -272,19 +278,28 @@ html {
     background-color: #003a70;
 }
 
+/* exclude course menu subheader from hover changes */
+.subhead h3 span:hover {
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    background-color: #adc7d0 !important;
+    color: #002453 !important;    
+    cursor: text;
+}
+
 #courseMenuPalette a:hover, #controlPanelPalette_contents a:hover, #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
-    color: #0ff !important;
-    background-color: #00315c !important;
+    color: #9ADAFF !important;
+    background-color: #113b71 !important;
 }
 
 /* weird course menu hover issue */
 #courseMenuPalette_contents > li:hover > a > span {
-    color: #0ff !important;
+    color: #9ADAFF !important;
 }
 
 /* puller is that indicator for minimizing or moving the course menu */
 #puller a:hover, #puller a:focus {
-    background-color: #0ff;
+    background-color: #9ADAFF;
 }
 
 .switcherLabel {
@@ -298,6 +313,7 @@ html {
 }
 /* */
 
+/* success bar */
 .good, .adding {
     background: #6fd162;
     color: #000;
@@ -348,10 +364,13 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
 }
 
 .portlet {
-    border: none;
-    background-color: #00315c;
+    background-color: #113b71;
     color: #fff;
+    border-color: #113b71;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
 }
+
 #moduleTitle, .portlet h2 {
     padding: 15px 10px 13px 25px;
     background-color: transparent;
