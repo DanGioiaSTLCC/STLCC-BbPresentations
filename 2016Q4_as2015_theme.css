@@ -4,41 +4,60 @@
 /BBLEARN 2012
 ================================================*/
 html {
-    font: 400 0.9em "Source Sans Pro","Open Sans", sans-serif;
+    font: 400 0.9em "Source Sans Pro", "Open Sans", sans-serif;
     font-size: .9em !important;
     overflow-x: auto;
+    background-color: #F8F8F8;
 }
 
+a {
+    color: #007CC1;
+}
+
+
 /* restore full width */
-#contentFrame, #schemePreview, .schemePreviewBody, body {
+
+#contentFrame,
+#schemePreview,
+.schemePreviewBody,
+body {
     max-width: 100%;
 }
 
+
 /* logoff button - make the text 'logout' visible */
+
 .global-nav-bar .logout-link {
-    width: 5em;
-    text-indent: 0;
+    width: 6em;
+    text-indent: 0.5em;
     background-position: 100% 0 !important;
 }
 
+
 /* resize and reposition branding image */
+
 .brandingImgWrap img {
-	color: #fff !important; /* make banner img alt text readable */
-	left: -1.5em !important;
-	max-height: initial !important;
-	max-width: initial !important;
-	top: -1.5em !important;
+    color: #fff !important;
+    /* make banner img alt text readable */
+    left: 15px !important;
+    max-height: inherit !important;
+    max-width: inherit !important;
+    top: 15px !important;
 }
 
 .topTabs {
-    background-color: #113b71 !important;
-}
-.topTabs .tabWrapper-right {
-	height: initial;
+    background-color: #003A70 !important;
 }
 
-#topTabActive, .appTabs .active a, .appTabs .active a:hover, .appTabs .active a:focus {
-  color: #fff;
+.topTabs .tabWrapper-right {
+    height: 1em;
+}
+
+#topTabActive,
+.appTabs .active a,
+.appTabs .active a:hover,
+.appTabs .active a:focus {
+    color: #fff;
 }
 
 .appTabs a {
@@ -46,32 +65,43 @@ html {
     border: 1px solid #fff !important;
     border-width: 0 1px 0 0 !important;
     border-radius: 0 !important;
-	padding: 0.25em 0.75em !important;
+    padding: 0.25em 0.75em !important;
 }
 
+
 /* enable top tabs to overtake branding logo
-   update to standard tab width plus logo*/
-@media only screen and (max-width: 750px) {
+   update to standard tab width plus logo
+
+@media only screen and (max-width: 590px) {
     .brandingImgWrap img {
         display: none;
     }
 }
+*/
+
+
 /* remove some of the excess space from below the top tabs */
+
 .appTabs td {
-	padding-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .appTabs td.active {
-	border-bottom-color: #9ADAFF;
+    border-bottom-color: #9ADAFF;
 }
 
+
 /* pane tabs aka child tabs */
-.paneTabs, .breadcrumbs {
+
+.paneTabs,
+.breadcrumbs {
     background: #D6E0E4;
 }
 
 .paneTabs a {
     color: #002453;
+    padding: 5px 10px !important;
+    border-color: #fff;
 }
 
 .paneTabs a:hover {
@@ -79,51 +109,67 @@ html {
     font-weight: bold;
 }
 
-.paneTabs .active a, .paneTabs .active a:hover, .paneTabs .active a:focus, .paneTabs .activepersonal a, .paneTabs .activepersonal a:hover, .paneTabs .active h3 {
+.paneTabs .active a,
+.paneTabs .active a:hover,
+.paneTabs .active a:focus,
+.paneTabs .activepersonal a,
+.paneTabs .activepersonal a:hover,
+.paneTabs .active h3 {
     color: #002453;
     font-weight: bold;
 }
 
+
+/*top half of nav space at top */
+
 .global-nav-bar-wrap {
-    background-color: #113b71;
+    background-color: #003A70;
 }
 
+
 /* unread message count style override */
-.global-nav-bar .badge, .side-nav .menu-icon span.badge {
+
+.global-nav-bar .badge,
+.side-nav .menu-icon span.badge {
     font-size: 1.3em;
     height: 1.3em;
     background-color: #980000;
     border-radius: 4px;
 }
 
-/* Global Nav Menu*/
-.flyout-menu {
-    background-color: #113b71;
 
+/* Global Nav Menu*/
+
+.flyout-menu {
+    background-color: #003A70;
 }
+
 .accordion_content li a {
     color: #002453;
 }
+
 .flyout-menu .labelMenuItem {
     text-transform: uppercase;
     color: #000;
     text-shadow: none;
     text-decoration: underline #000;
 }
+
 .flyout-menu a {
     color: #002453;
 }
 
 .flyout-menu .mybb-tools {
-    background-color: #113b71;
+    background-color: #003A70;
 }
 
 .nav-link {
     color: #fff;
-    background: #113b71;
+    background: #002453;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     background: #000;
 }
 
@@ -142,22 +188,30 @@ html {
     font-size: 100%;
 }
 
+
 /* My Bb */
+
 .side-nav {
-    background: #113b71;
+    background: #002453;
 }
+
 
 /* force quick links launcher back into content space */
+
 #quick_links_wrap {
-	right: initial;
-    z-index: 9002
+    right: calc(100% - 1px);
+    z-index: 9002;
+    background: none;
 }
 
-#quick_links_wrap:hover, #quick_links_wrap.quick_link_wrap_focus {
+#quick_links_wrap:hover,
+#quick_links_wrap.quick_link_wrap_focus {
     left: initial;
 }
 
+
 /* container for action butttons at top of a section */
+
 .actionBar ul li a:hover {
     background: #003A70 !important;
     color: #fff !important;
@@ -167,7 +221,18 @@ html {
     background-color: transparent !important;
     color: #003A70 !important;
     text-decoration: underline;
-    border: none;/* #003A70 5px solid !important;*/
+    border: none;
+    /* #003A70 5px solid !important;*/
+}
+
+
+/* reduce tab page button padding */
+
+.mainButton>a,
+.secondaryButton>a,
+.mainButton h2>a,
+.secondaryButton h2>a {
+    padding: 5px 18px 6px;
 }
 
 .helpLink a.browseIcon {
@@ -178,7 +243,11 @@ html {
     max-width: 70em;
 }
 
-.announcementList .details, #announcementList .details {
+
+/* announcement date, make it look technical with monospace */
+
+.announcementList .details,
+#announcementList .details {
     font-family: monospace;
     font-size: small;
 }
@@ -186,15 +255,41 @@ html {
 .reqfield {
     color: #555;
 }
-.genericButton, .genericButtonImg, input.genericButton[type="submit"] {
+
+.genericButton,
+.genericButtonImg,
+input.genericButton[type="submit"] {
     background-color: #d6e0e4;
     box-shadow: initial;
 }
+
 .fileInputWrapper input.visibleInput {
-    border: #003A70 solid;
+    border: none;
+    /*#003A70 solid;*/
 }
 
-.genericButton, .genericButtonImg, input.genericButton[type="submit"], .browse, .browseIcon, .rumble h3 + ul > li > a, .rumble h3 + ul > li > a, .rumble_top h3 + ul > li > a, .rumble_top h3 + ul > li > a, .paging a, .itemHeaderControl > a, .actionMenuButton, .button-3, .button-3-img, .button-4, .button-4-img, #toolsSearchBox + .button-4, .treeContainer .tree li a.button-4-img, .rumble a, .rumble_top a, .rumble .abutton, .rumble_top .abutton {
+.genericButton,
+.genericButtonImg,
+input.genericButton[type="submit"],
+.browse,
+.browseIcon,
+.rumble h3+ul>li>a,
+.rumble h3+ul>li>a,
+.rumble_top h3+ul>li>a,
+.rumble_top h3+ul>li>a,
+.paging a,
+.itemHeaderControl>a,
+.actionMenuButton,
+.button-3,
+.button-3-img,
+.button-4,
+.button-4-img,
+#toolsSearchBox+.button-4,
+.treeContainer .tree li a.button-4-img,
+.rumble a,
+.rumble_top a,
+.rumble .abutton,
+.rumble_top .abutton {
     border: none;
     background-color: #d6e0e4;
     box-shadow: initial;
@@ -205,46 +300,116 @@ html {
     color: #444;
 }
 
+
 /* content table headers, increased contrast to AAA */
-.inventory > thead tr th, .splashTable thead tr th {
-	color: #333;
+
+.inventory>thead tr th,
+.splashTable thead tr th {
+    color: #333;
 }
 
-.sortable > thead th a {
-	color: #333;
+.sortable>thead th a {
+    color: #333;
 }
+
 
 /* unread count, particularly used for discussion board */
+
 .unread-count {
-	background: #980000 !important;
+    background: #980000 !important;
 }
 
+
 /* narrow course and org content for readability */
+
 .read {
     max-width: 70em;
 }
+
 .contentList .details {
     padding-left: 60px;
     max-width: 70em;
     background-color: #fff;
 }
-.contentList, .buildList, .contentListPlain, .announcementList {
-	background-color: #fff;
+
+.contentList,
+.buildList,
+.contentListPlain,
+.announcementList {
+    background-color: #fff;
 }
 
+
 /* course menu stuff */
-#courseMenuPalette div.navPaletteContent {
-    background-color: #113b71;
+
+#courseMenuPalette {
+    background-color: #002453;
 }
+
+#courseMenuPalette div.navPaletteContent {
+    background-color: #003a70 !important;
+}
+
+
+/* course menu 'add' button */
+
+.mainButton>a {
+    color: #fff !important;
+    background: #002453 !important;
+}
+
+
+/* course menu other header buttons */
+
+.secondaryButton>a {
+    background: #002453 !important;
+    color: #fff !important;
+}
+
+
+/* course menu 'add' menu */
+
+#addCmItem>ul {
+    background: #002453 !important;
+}
+
+
+/* course menu 'add' menu */
+
+#addCmItem>ul {
+    background-color: #fff !important;
+}
+
+
+/* add content menu subsection heads */
+
+#bcMenu div h3 {
+    font-weight: bold;
+}
+
 
 /* course menu wrapper */
 .menuWrap {
-    background-color: #113b71;
+    background-color: #003A70;
+}
+#courseMenuPalette ul {
+    background-color: #003A70;
 }
 
-#courseMenuPalette ul {
-    background-color: #113b71;
+
+/* ############################### */
+/* try to force the course menu links to branding colors */
+#courseMenuPalette div.navPaletteContent ul li a span {
+    color: #fff !important;
 }
+
+#courseMenuPalette div.navPaletteContent ul li a {
+    color: #fff !important;
+}
+.navPaletteContent h3 a {
+    color: #fff !important;
+}
+/* ############################### */
 
 .subhead {
     letter-spacing: 0.05em;
@@ -252,98 +417,202 @@ html {
     background-color: #adc7d0 !important;
     color: #002453 !important
 }
-.listCm .subhead h3{
+
+.listCm .subhead h3 {
     letter-spacing: 0.05em;
     background-color: #adc7d0 !important;
     color: #002453 !important
 }
 
-.listCm .courseMenu .divider, .buttonCm .courseMenu .divider {
+
+/* update course menu divider to not take up a full menu space */
+.listCm .courseMenu .divider,
+.buttonCm .courseMenu .divider {
     padding: 0px 18px;
 }
 
-/* course control panel to match title header */
-#controlPanelPalette {
-    background-color: #333;
-    font-size: medium;
-}
-#courseMenuPalette_contents {
-    font-size: medium;
-}
-.noteditmode .listCm .courseMenu .divider, .noteditmode .listCm .buttonCm .divider {
+.noteditmode .listCm .courseMenu .divider,
+.noteditmode .listCm .buttonCm .divider {
     padding: 0px 18px;
 }
 
-.discover .navPaletteContent, .singleControl .navPaletteContent {
+.discover .navPaletteContent,
+.singleControl .navPaletteContent {
     background-color: #003a70;
 }
 
+
+/* course menu empty content area square idicator */
+.cmLink-empty {
+    background: transparent url(images/controls.png) no-repeat -389px -120px;
+    margin-top: -7px;
+}
+
+#courseMenuPalette .cmLink-empty img {
+    display: initial;
+}
+
+
+/* disable course menu buttons entirely */
+
+div.buttonCm ul.courseMenu li,
+div.buttonCm ul.courseMenu li.here {
+    background-image: none !important;
+}
+
+
+/* course control panel to match title header */
+
+#controlPanelPalette {
+    background-color: #002453;
+    font-size: medium;
+}
+
+#courseMenuPalette_contents {
+    font-size: medium;
+}
+
+
 /* exclude course menu subheader from hover changes */
-.subhead h3 span:hover {
+
+#courseMenuPalette li.subhead h3 span:hover {
     letter-spacing: 0.05em;
     font-weight: bold;
     background-color: #adc7d0 !important;
-    color: #002453 !important;    
+    color: #002453 !important;
     cursor: text;
 }
 
-#courseMenuPalette a:hover, #controlPanelPalette_contents a:hover, #courseMenuPalette span:hover, #controlPanelPalette_contents span:hover {
+#courseMenuPalette a:hover,
+#controlPanelPalette_contents a:hover,
+#courseMenuPalette span:hover,
+#controlPanelPalette_contents span:hover {
     color: #9ADAFF !important;
-    background-color: #113b71 !important;
+    /*background-color: #003A70 !important;*/
 }
+
 
 /* weird course menu hover issue */
-#courseMenuPalette_contents > li:hover > a > span {
+
+#courseMenuPalette_contents>li:hover>a>span:hover {
     color: #9ADAFF !important;
 }
 
+.ineditmode #courseMenuPalette_contents>li:hover {
+    background: #fff !important;
+}
+
+.ineditmode #courseMenuPalette_contents>li:hover>a>span {
+    color: #002453 !important;
+}
+
+.ineditmode #courseMenuPalette_contents>li:hover>a>span:hover {
+    color: #002453 !important;
+}
+
+
 /* puller is that indicator for minimizing or moving the course menu */
-#puller a:hover, #puller a:focus {
+
+#puller a:hover,
+#puller a:focus {
     background-color: #9ADAFF;
+}
+
+
+/* course menu previews */
+
+.cmPreviewWrapper div.navPaletteContent ul li a {
+    color: #fff !important;
+}
+
+.cmPreviewWrapper div.navPaletteTitle a {
+    color: #fff !important;
+}
+
+.cmPreviewWrapper #previewCourseMenu_link {
+    color: #fff !important;
 }
 
 .switcherLabel {
     color: #444;
 }
+
 .read-off {
     color: initial;
 }
+
 .read-on {
     background-color: #444;
 }
+
+
 /* */
 
+
 /* success bar */
-.good, .adding {
+
+.good,
+.adding {
     background: #6fd162;
     color: #000;
 }
 
+
 /* submit and ok buttons */
-#primaryButton, input.submit[type="submit"], .rumble .mainButton > a, .rumble_top .mainButton > a, .button-1, .button-1-img {
-    background-color: #113b71;
+
+#primaryButton,
+input.submit[type="submit"],
+.rumble .mainButton>a,
+.rumble_top .mainButton>a,
+.button-1,
+.button-1-img {
+    background-color: #003A70;
 }
+
 
 /* reorder background */
+
 .item .reorder {
-    background: #00b3e3;
+    background: #9ADAFF;
 }
 
+
 /* modules */
-.portlet h3, #lightbox h3, .portlet div.portletBlock h4, .portlet div.blockContents h4, .flyout h3, .labelMenuItem {
+
+.portlet h3,
+#lightbox h3,
+.portlet div.portletBlock h4,
+.portlet div.blockContents h4,
+.flyout h3,
+.labelMenuItem {
     color: #003A70;
 }
-.noItems, .additional + p .warnFont {
+
+.noItems,
+.additional+p .warnFont {
     color: #555;
 }
-a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadOpen {
+
+a,
+.portlet .subCategories li a,
+.blockGroups .itemHead,
+.blockGroups .itemHeadOpen {
     color: #003A70;
 }
+
+
+/* underline course link on pointer hover in my courses module */
+
+.portlet .courseListing li>a:hover {
+    text-decoration: underline;
+}
+
 .moduleControlWrapper a::after {
     color: #555;
 }
 
-.announcementList .details, #announcementList .details {
+.announcementList .details,
+#announcementList .details {
     font-family: "Lucida Sans Typewriter", "Lucida Console", monospace;
 }
 
@@ -351,37 +620,49 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
     font-size: medium;
 }
 
+
 /* flatten module space */
-.steptitle, div[id*="step"], div[id*="Step"], #dataCollectionContainer, .container {
+
+.steptitle,
+div[id*="step"],
+div[id*="Step"],
+#dataCollectionContainer,
+.container {
     background-color: transparent;
 }
 
+
 /* reduce empty space and extra borders around the content*/
+
 .container {
     border: none;
-	padding: 1em;
-	margin: 0;    
+    padding: 1em;
+    margin: 0;
 }
 
 .portlet {
-    background-color: #113b71;
+    background-color: #003A70;
     color: #fff;
-    border-color: #113b71;
+    border-color: #002453;
     border-style: solid;
     border-width: 0 1px 1px 0;
 }
 
-#moduleTitle, .portlet h2 {
+#moduleTitle,
+.portlet h2 {
     padding: 15px 10px 13px 25px;
     background-color: transparent;
     font-size: 1.2rem;
     letter-spacing: 0.05em;
     color: #fff;
 }
+
 .collapsible {
     background-color: #fff;
     color: #444;
 }
+
+
 /* end flatten */
 
 
@@ -392,10 +673,11 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
 
 .readable {
     max-width: 70em;
-	font-size: medium;
-	font-variant: normal;
-	font-style: normal;
+    font-size: medium;
+    font-variant: normal;
+    font-style: normal;
 }
+
 .comfortable {
     max-width: 65em;
     line-height: 1.5em;
@@ -403,27 +685,227 @@ a, .portlet .subCategories li a, .blockGroups .itemHead, .blockGroups .itemHeadO
     font-variant: normal;
     font-style: normal;
 }
+
 .tip {
-    border: 1.5px solid #F38A00; 
-    padding: 1em; 
-    margin: 4%; 
-    margin-top: 30px; 
+    border: 1.5px solid #F38A00;
+    padding: 1em;
+    margin: 4%;
+    margin-top: 30px;
     max-width: 85%;
     text-align: center;
-	font-size: medium;
-	font-variant: normal;
-	font-style: normal;	
-	font-weight: bold;
+    font-size: medium;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: bold;
 }
+
+.StlccAnnouncementWrapper {
+    background-color: #fff;
+    color: #000;
+    border-style: solid;
+    border-color: #003a70;
+    width: 95%;
+    margin: auto;
+    padding: 0.5em;
+    font-size: initial;
+}
+
+
 /* end custom vtbe classes */
+
+
 /* decorate links that open in new window */
+
 a[target="_blank"]::after {
     font-family: FontAwesome;
     font-size: smaller;
     content: " \f08e";
 }
 
+
 /* action bar at the bottom */
+
 .taskbuttondiv_wrapper {
-	border: 0.5px solid;
+    border: 0.5px solid;
+}
+
+
+/*section titles on content pages*/
+
+h3.steptitle {
+    background-color: transparent;
+    color: #002453;
+    top: 0;
+}
+
+
+/* section top borders */
+
+div[id*="step"],
+.submittitle,
+#infoStep,
+#taskStatusStep,
+#linkedContentStep {
+    padding: 0 24px 34px 12px;
+    border-top: 1px solid #d6e0e4;
+}
+
+.stepcontent {
+    color: #333 !important;
+}
+
+.reqfield {
+    color: #333;
+}
+
+
+/*menu - not sure where used, actions on course admin
+.rumble_top .nav .sub ul li a, .rumble .nav .sub ul li a:hover {
+    color: #002453 !important;
+    background-color: #fff !important;   
+}
+*/
+
+
+/* date picker - possibly other selections - popout when called from an inventory table
+    found this in assignment availability exceptions
+ */
+
+.inventory>tbody tr td,
+.inventory>tbody tr th {
+    overflow-x: visible;
+}
+
+.inventoryListTableContainerDiv {
+    overflow-x: visible;
+}
+
+
+/* calender tool */
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: #fff !important;
+    color: #003a70 !important;
+}
+
+#calendar_content {
+    margin-left: 20em !important;
+}
+
+.fc-widget-header {
+    color: #000 !important;
+}
+
+.fc-day-number {
+    color: #007CC1 !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fc-button-content {
+    text-shadow: none;
+    color: #333 !important;
+    background: #fff !important;
+    border: solid #333 !important;
+}
+
+.calendar-list .calendar-name label {
+    color: #003a70 !important;
+}
+
+.ui-datepicker th {
+    color: #333 !important;
+}
+
+.margin-interact h3 {
+    color: #333 !important;
+}
+
+#streamHeader_calendar h1 span.title-text {
+    color: #003a70 !important;
+}
+
+
+/* paging display */
+
+.pagingprefs {
+    color: #333;
+}
+
+
+/* update login screen for narrow devices - should eventually replace this with tableless design on login page */
+
+@media only screen and (min-width:120px) and
+/* adds a space so YUI can render media queries! */
+
+(max-width:480px) {
+    #loginPageContainer>table>tbody>tr>td:nth-child(1) {
+        display: none;
+    }
+}
+
+
+/* OK back button */
+
+.backLink a {
+    color: #003a70;
+    border: dotted;
+}
+
+.backLink a::before {
+    color: initial;
+}
+
+.backLink a:hover {
+    background: #fff;
+    border: #003a70 solid;
+}
+
+
+/* natural word wrapping for help text */
+
+.helphelp,
+.pageTitle p,
+.details.label {
+    word-break: normal;
+}
+
+.helphelp a {
+    color: #003a70;
+}
+
+/* in shared css, course jump menu */
+
+.cmdiv ul {
+    width: 380px;
+}
+
+span.updateType {
+    color: #fff;
+}
+
+.version {
+    color: #002453;
+}
+
+.installation {
+    color: #002453;
+}
+
+
+/* branding logo and responsive width */
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .brandingImgWrap img {
+        color: #fff !important;
+        left: 5px !important;
+        max-height: inherit !important;
+        max-width: 200px !important;
+        top: 5px !important;
+    }
+    body #globalNavPageNavArea {
+        margin-top: inherit;
+    }
 }
