@@ -1,8 +1,3 @@
-/* BBLEARN 2012
-================================================
-...
-/BBLEARN 2012
-================================================*/
 html {
     font: 400 0.9em "Source Sans Pro", "Open Sans", sans-serif;
     font-size: .9em !important;
@@ -16,7 +11,6 @@ a {
 
 
 /* restore full width */
-
 #contentFrame,
 #schemePreview,
 .schemePreviewBody,
@@ -26,7 +20,6 @@ body {
 
 
 /* logoff button - make the text 'logout' visible */
-
 .global-nav-bar .logout-link {
     width: 6em;
     text-indent: 0.5em;
@@ -35,10 +28,8 @@ body {
 
 
 /* resize and reposition branding image */
-
 .brandingImgWrap img {
-    color: #fff !important;
-    /* make banner img alt text readable */
+    color: #fff !important; /* make banner img alt text readable */
     left: 15px !important;
     max-height: inherit !important;
     max-width: inherit !important;
@@ -68,20 +59,7 @@ body {
     padding: 0.25em 0.75em !important;
 }
 
-
-/* enable top tabs to overtake branding logo
-   update to standard tab width plus logo
-
-@media only screen and (max-width: 590px) {
-    .brandingImgWrap img {
-        display: none;
-    }
-}
-*/
-
-
 /* remove some of the excess space from below the top tabs */
-
 .appTabs td {
     padding-bottom: 0 !important;
 }
@@ -92,7 +70,6 @@ body {
 
 
 /* pane tabs aka child tabs */
-
 .paneTabs,
 .breadcrumbs {
     background: #D6E0E4;
@@ -121,14 +98,12 @@ body {
 
 
 /*top half of nav space at top */
-
 .global-nav-bar-wrap {
     background-color: #003A70;
 }
 
 
 /* unread message count style override */
-
 .global-nav-bar .badge,
 .side-nav .menu-icon span.badge {
     font-size: 1.3em;
@@ -139,7 +114,6 @@ body {
 
 
 /* Global Nav Menu*/
-
 .flyout-menu {
     background-color: #003A70;
 }
@@ -190,14 +164,12 @@ body {
 
 
 /* My Bb */
-
 .side-nav {
     background: #002453;
 }
 
 
 /* force quick links launcher back into content space */
-
 #quick_links_wrap {
     right: calc(100% - 1px);
     z-index: 9002;
@@ -211,7 +183,6 @@ body {
 
 
 /* container for action butttons at top of a section */
-
 .actionBar ul li a:hover {
     background: #003A70 !important;
     color: #fff !important;
@@ -227,7 +198,6 @@ body {
 
 
 /* reduce tab page button padding */
-
 .mainButton>a,
 .secondaryButton>a,
 .mainButton h2>a,
@@ -245,7 +215,6 @@ body {
 
 
 /* announcement date, make it look technical with monospace */
-
 .announcementList .details,
 #announcementList .details {
     font-family: monospace;
@@ -302,7 +271,6 @@ input.genericButton[type="submit"],
 
 
 /* content table headers, increased contrast to AAA */
-
 .inventory>thead tr th,
 .splashTable thead tr th {
     color: #333;
@@ -314,14 +282,12 @@ input.genericButton[type="submit"],
 
 
 /* unread count, particularly used for discussion board */
-
 .unread-count {
     background: #980000 !important;
 }
 
 
 /* narrow course and org content for readability */
-
 .read {
     max-width: 70em;
 }
@@ -341,7 +307,6 @@ input.genericButton[type="submit"],
 
 
 /* course menu stuff */
-
 #courseMenuPalette {
     background-color: #002453;
 }
@@ -352,7 +317,6 @@ input.genericButton[type="submit"],
 
 
 /* course menu 'add' button */
-
 .mainButton>a {
     color: #fff !important;
     background: #002453 !important;
@@ -360,7 +324,6 @@ input.genericButton[type="submit"],
 
 
 /* course menu other header buttons */
-
 .secondaryButton>a {
     background: #002453 !important;
     color: #fff !important;
@@ -368,21 +331,18 @@ input.genericButton[type="submit"],
 
 
 /* course menu 'add' menu */
-
 #addCmItem>ul {
     background: #002453 !important;
 }
 
 
 /* course menu 'add' menu */
-
 #addCmItem>ul {
     background-color: #fff !important;
 }
 
 
 /* add content menu subsection heads */
-
 #bcMenu div h3 {
     font-weight: bold;
 }
@@ -392,6 +352,7 @@ input.genericButton[type="submit"],
 .menuWrap {
     background-color: #003A70;
 }
+
 #courseMenuPalette ul {
     background-color: #003A70;
 }
@@ -406,6 +367,7 @@ input.genericButton[type="submit"],
 #courseMenuPalette div.navPaletteContent ul li a {
     color: #fff !important;
 }
+
 .navPaletteContent h3 a {
     color: #fff !important;
 }
@@ -454,7 +416,6 @@ input.genericButton[type="submit"],
 
 
 /* disable course menu buttons entirely */
-
 div.buttonCm ul.courseMenu li,
 div.buttonCm ul.courseMenu li.here {
     background-image: none !important;
@@ -462,7 +423,6 @@ div.buttonCm ul.courseMenu li.here {
 
 
 /* course control panel to match title header */
-
 #controlPanelPalette {
     background-color: #002453;
     font-size: medium;
@@ -474,7 +434,6 @@ div.buttonCm ul.courseMenu li.here {
 
 
 /* exclude course menu subheader from hover changes */
-
 #courseMenuPalette li.subhead h3 span:hover {
     letter-spacing: 0.05em;
     font-weight: bold;
@@ -493,7 +452,6 @@ div.buttonCm ul.courseMenu li.here {
 
 
 /* weird course menu hover issue */
-
 #courseMenuPalette_contents>li:hover>a>span:hover {
     color: #9ADAFF !important;
 }
@@ -512,7 +470,6 @@ div.buttonCm ul.courseMenu li.here {
 
 
 /* puller is that indicator for minimizing or moving the course menu */
-
 #puller a:hover,
 #puller a:focus {
     background-color: #9ADAFF;
@@ -520,7 +477,6 @@ div.buttonCm ul.courseMenu li.here {
 
 
 /* course menu previews */
-
 .cmPreviewWrapper div.navPaletteContent ul li a {
     color: #fff !important;
 }
@@ -545,12 +501,9 @@ div.buttonCm ul.courseMenu li.here {
     background-color: #444;
 }
 
-
 /* */
 
-
 /* success bar */
-
 .good,
 .adding {
     background: #6fd162;
@@ -559,7 +512,6 @@ div.buttonCm ul.courseMenu li.here {
 
 
 /* submit and ok buttons */
-
 #primaryButton,
 input.submit[type="submit"],
 .rumble .mainButton>a,
@@ -571,14 +523,12 @@ input.submit[type="submit"],
 
 
 /* reorder background */
-
 .item .reorder {
     background: #9ADAFF;
 }
 
 
 /* modules */
-
 .portlet h3,
 #lightbox h3,
 .portlet div.portletBlock h4,
@@ -602,7 +552,6 @@ a,
 
 
 /* underline course link on pointer hover in my courses module */
-
 .portlet .courseListing li>a:hover {
     text-decoration: underline;
 }
@@ -622,7 +571,6 @@ a,
 
 
 /* flatten module space */
-
 .steptitle,
 div[id*="step"],
 div[id*="Step"],
@@ -633,7 +581,6 @@ div[id*="Step"],
 
 
 /* reduce empty space and extra borders around the content*/
-
 .container {
     border: none;
     padding: 1em;
@@ -661,8 +608,6 @@ div[id*="Step"],
     background-color: #fff;
     color: #444;
 }
-
-
 /* end flatten */
 
 
@@ -670,7 +615,6 @@ div[id*="Step"],
     add any of these CSS classes to a paragraph or div tag 
     for standardized formatting
 */
-
 .readable {
     max-width: 70em;
     font-size: medium;
@@ -709,13 +653,10 @@ div[id*="Step"],
     padding: 0.5em;
     font-size: initial;
 }
-
-
 /* end custom vtbe classes */
 
 
 /* decorate links that open in new window */
-
 a[target="_blank"]::after {
     font-family: FontAwesome;
     font-size: smaller;
@@ -724,14 +665,12 @@ a[target="_blank"]::after {
 
 
 /* action bar at the bottom */
-
 .taskbuttondiv_wrapper {
     border: 0.5px solid;
 }
 
 
 /*section titles on content pages*/
-
 h3.steptitle {
     background-color: transparent;
     color: #002453;
@@ -740,7 +679,6 @@ h3.steptitle {
 
 
 /* section top borders */
-
 div[id*="step"],
 .submittitle,
 #infoStep,
@@ -770,7 +708,6 @@ div[id*="step"],
 /* date picker - possibly other selections - popout when called from an inventory table
     found this in assignment availability exceptions
  */
-
 .inventory>tbody tr td,
 .inventory>tbody tr th {
     overflow-x: visible;
@@ -782,7 +719,6 @@ div[id*="step"],
 
 
 /* calender tool */
-
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
@@ -829,17 +765,13 @@ div[id*="step"],
 
 
 /* paging display */
-
 .pagingprefs {
     color: #333;
 }
 
 
 /* update login screen for narrow devices - should eventually replace this with tableless design on login page */
-
-@media only screen and (min-width:120px) and
-/* adds a space so YUI can render media queries! */
-
+@media only screen and (min-width:120px) and /* adds a space so YUI can render media queries! */
 (max-width:480px) {
     #loginPageContainer>table>tbody>tr>td:nth-child(1) {
         display: none;
@@ -848,7 +780,6 @@ div[id*="step"],
 
 
 /* OK back button */
-
 .backLink a {
     color: #003a70;
     border: dotted;
@@ -865,7 +796,6 @@ div[id*="step"],
 
 
 /* natural word wrapping for help text */
-
 .helphelp,
 .pageTitle p,
 .details.label {
@@ -876,8 +806,8 @@ div[id*="step"],
     color: #003a70;
 }
 
-/* in shared css, course jump menu */
 
+/* in shared css, course jump menu */
 .cmdiv ul {
     width: 380px;
 }
@@ -894,9 +824,7 @@ span.updateType {
     color: #002453;
 }
 
-
 /* branding logo and responsive width */
-
 @media only screen and (min-width:320px) and (max-width:480px) {
     .brandingImgWrap img {
         color: #fff !important;
